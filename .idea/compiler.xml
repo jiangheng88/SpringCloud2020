@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="customer-dept-80" />
+        <module name="customer-dept-hystrix-dashboard" />
+        <module name="customerdepthystrixdashboard" />
+        <module name="customers-dept-feign" />
+        <module name="customersdeptfeign" />
+        <module name="microservicecloud-config-dept-client-8001" />
+        <module name="microservicecloud-config-eureka-client-7001" />
+        <module name="pd-provider-api" />
+        <module name="pd-provider-dept-8001" />
+        <module name="pd-provider-dept-8002" />
+        <module name="pd-provider-dept-8003" />
+        <module name="pd-provider-dept-hystrix-8001" />
+        <module name="pdproviderapi" />
+        <module name="pdproviderdept8001" />
+        <module name="pdproviderdept8002" />
+        <module name="pdproviderdept8003" />
+        <module name="pdproviderdepthystrix8001" />
+        <module name="springCloud-config-3344" />
+        <module name="springcloud-config-client-3355" />
+        <module name="springcloud-customers-dept-80" />
+        <module name="springcloud-eureka-7002" />
+        <module name="springcloud-eureka-7003" />
+        <module name="springcloud-zuul-gateway-9527" />
+        <module name="springCloudconfig3344" />
+        <module name="springcloudconfigclient3355" />
+        <module name="springcloudeureka7002" />
+        <module name="springcloudeureka7003" />
+        <module name="springcloudzuulgateway9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="consumer80" target="1.7" />
+      <module name="customerdept80" target="1.7" />
+      <module name="pd-service" target="1.8" />
+      <module name="pd-service (1)" target="1.8" />
+      <module name="pdservice" target="1.8" />
+      <module name="service" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer80" options="-parameters" />
+      <module name="customerdept80" options="-parameters" />
+      <module name="pdproviderdept8001" options="" />
+      <module name="pdservice" options="" />
+      <module name="springcloud-customers-dept-80" options="" />
+      <module name="springcloudeureka7001" options="" />
+    </option>
+  </component>
+</project>

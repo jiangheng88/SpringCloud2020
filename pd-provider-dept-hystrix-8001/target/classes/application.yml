@@ -1,0 +1,42 @@
+#spring的配置
+spring:
+  application:
+    name: springCloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=UTF-8&&serverTimezone=UTC
+  cache:
+    cache-names: menus_cache
+server:
+  port: 8001
+  compression:
+    enabled: true
+logging:
+  level:
+    org.javaboy.vhr.mapper: debug
+#开启驼峰配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  #config-location: classpath:mybatis-config.xml
+  #扫描.xml配置文件
+  mapper-locations: classpath:mapper/*.xml
+  #  设置别名扫描的包
+  type-aliases-package: com.msun.cloud.entity
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+    instance:
+      instance-id: pdprovider-dept-hystrix-8001
+      #访问路径显示IP地址
+      prefer-ip-address: true
+    healthcheck:
+      enabled: true
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
